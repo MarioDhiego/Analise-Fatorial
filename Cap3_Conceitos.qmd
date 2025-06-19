@@ -10,6 +10,24 @@
 A Análise Fatorial fundamenta-se na ideia de que a variância de uma variável observável pode ser decomposta em dois componentes principais: (1) a parte explicada pelos fatores comuns (chamada de comunalidade) e (2) a parte específica ou única da variável (chamada de variância específica). Dois conceitos essenciais emergem desse raciocínio: comunalidade e carga fatorial.
 
 
+## **Matriz de Correlações**
+
+A base da análise fatorial é a matriz de correlações entre as variáveis observadas. Essa matriz permite avaliar quais itens estão mais inter-relacionados, sugerindo que compartilham um mesmo fator subjacente. Ela mostra como cada variável observada se correlaciona com as demais, sendo o ponto de partida para a identificação de fatores comuns.
+
+Uma matriz de correlações, denotada por $\mathbf{R}$, é uma matriz simétrica de ordem $p \times p$, onde cada elemento $r_{ij}$ representa o coeficiente de correlação de Pearson entre as variáveis $X_i$ e $X_j$.
+
+
+
+$$
+\mathbf{R} = 
+\begin{bmatrix}
+1 & r_{12} & r_{13} & \cdots & r_{1p} \\
+r_{21} & 1 & r_{23} & \cdots & r_{2p} \\
+r_{31} & r_{32} & 1 & \cdots & r_{3p} \\
+\vdots & \vdots & \vdots & \ddots & \vdots \\
+r_{p1} & r_{p2} & r_{p3} & \cdots & 1 \\
+\end{bmatrix}
+$$
 
 ## **Comunalidades ($h^{2}$)**
   
