@@ -1,0 +1,59 @@
+#------------------------------------------------------------------------------#
+# PREÂMBULO DO QUARTO BOOK #
+project:
+  type: book
+  output-dir: docs
+book:
+  title: "FUNDAMENTOS DE ANÁLISE FATORIAL"
+  subtitle: "Um Guia Prático na Linguagem R"
+  date: "`r format(Sys.time(), '%d %B, %Y')`"
+  author:
+    - name: "**Mário Diego Rocha Valente**"
+      id: md
+      orcid: 0000-0001-7262-3336
+      url: mario.valente@detran.pa.gov.br
+      email: mario.valente@detran.pa.gov.br
+      corresponding: TRUE
+      affiliation:
+        - Analista de Trânsito(DETRAN-PA)
+        - Graduando: Sistemas de Informação(UFPA)
+  page-footer:
+    background: blue
+    left: |
+      (VALENTE - 2025).
+    right: |
+      UFPA.
+  search: TRUE
+  repo-url: https://github.com/MarioDhiego
+  repo-actions: [edit, issue]
+  downloads: [pdf, docx]
+  sharing: [twitter, facebook]
+  page-navigation: TRUE
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - Cap2_Origens.qmd
+    - Cap3_Conceitos.qmd
+    - references.qmd
+comments:
+  hypothesis: TRUE
+title-block-banner: TRUE
+bibliography: references.bib
+format:
+  html:
+    code-fold: TRUE
+    code-tools: TRUE
+    code-link: TRUE
+    theme: cerulean
+    toc: TRUE
+    number_sections: TRUE
+    toc_float: TRUE
+    toc-title: Índice
+    toc-location: right
+    keep_md: TRUE
+  pdf:
+    documentclass: report
+epub: default
+
+
+

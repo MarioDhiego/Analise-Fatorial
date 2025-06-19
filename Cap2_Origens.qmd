@@ -1,0 +1,40 @@
+
+
+```{=html}
+<style>
+body{text-align: justify}
+</style>
+```
+
+:::: progress
+::: {.progress-bar style="width: 100%;"}
+:::
+::::
+
+# **Origens e Evolução Histórica da AF**
+
+A Análise Fatorial (AF) surgiu no início do século XX como uma técnica estatística voltada para a compreensão e mensuração científica de fenômenos complexos, especialmente na área da psicologia. Seu desenvolvimento foi motivado pela necessidade de investigar construtos abstratos — como inteligência, personalidade e outras variáveis latentes — que não podem ser observados diretamente, mas que influenciam um conjunto de variáveis observáveis.
+
+## **Pioneiros da Análise Fatorial**
+
+
+
+**Thurstone (1931)** identificou sete habilidades mentais primárias, em vez de um único fator g. Estudos mais recentes têm alterado a quantidade de fatores a serem considerados na análise de inteligência. No início, os métodos apresentavam uma característica mais empírica do que inferencial. Em 1933 Pearson e Hotteling deram um formalismo melhor as idéias criadas por Spearman, e assim impulsionado com essas idéias, em 1940 com Lawley, surge um primeiro trabalho com um maior rigor matemático, o que fez com que se aumentasse à aceitação dessas técnicas no ramo da psicologia (**LAWLEY, 1940**).
+
+O germinar da Análise Fatorial está ligado a trabalhos pioneiros de **Karl Pearson (1901)** e do psicólogo inglês **Charles Spearman (1863–1945)**. Spearman, em 1904, propôs que a inteligência humana poderia ser compreendida por meio de um fator geral, denominado fator “g” (general intelligence). Esse modelo unifatorial afirmava que o desempenho em diferentes testes cognitivos era determinado por esse único fator latente comum. Spearman também introduziu a ideia de que as correlações entre variáveis observáveis poderiam ser explicadas por variáveis latentes não observadas diretamente, fundamentando a psicometria moderna (Spearman, 1904).
+
+
+Na década de 1930, o matemático e psicólogo americano **Louis L. Thurstone (1887–1955)** desafiou a visão unifatorial de Spearman ao defender que a inteligência era multifacetada, composta por vários fatores primários independentes, como raciocínio verbal, habilidade espacial e memória. Thurstone foi pioneiro na análise fatorial de múltiplos fatores e desenvolveu métodos para rotacionar os fatores (rotação ortogonal), tornando os resultados mais interpretáveis e relevantes. Ele fundou a escola dos fatores primários, contribuindo decisivamente para o avanço da AF (Thurstone, 1931).
+
+
+Já na metade do século XX, **Raymond Cattell (1905–1998)** buscou unir os fundamentos teóricos da psicologia com as técnicas da análise fatorial, ampliando o uso prático da metodologia. Ele distinguiu entre inteligência fluida e cristalizada, popularizou a Análise Fatorial Exploratória (AFE) e desenvolveu o famoso teste 16PF (16 fatores de personalidade). Cattell também foi pioneiro na análise de segundo nível, analisando fatores de fatores, o que permitiu compreender estruturas mais complexas.
+
+
+Nos anos 1970, com o avanço da modelagem estatística, **Karl Jöreskog** desenvolveu a Análise Fatorial Confirmatória (AFC), que se baseia em modelos de equações estruturais (SEM). Sua abordagem trouxe maior rigor teórico e a possibilidade de testar hipóteses específicas sobre as relações entre variáveis observadas e latentes. Jöreskog é o criador do programa LISREL, e seu trabalho fundamenta hoje a AFC moderna, inclusive nas ferramentas computacionais como o **pacote lavaan na linguagem R**.
+
+
+
+:::: progress
+::: {.progress-bar style="width: 100%;"}
+:::
+::::

@@ -1,0 +1,72 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "FUNDAMENTOS DE ANÁLISE FATORIAL",
+    "section": "",
+    "text": "Prefàcio\nA Análise Fatorial é um método estatístico multivariado amplamente utilizado para explorar padrões ocultos e reduzir a complexidade dos dados. O que realmente motiva um aluno? Quais dimensões psicológicas influenciam o comportamento do consumidor? Como podemos resumir dezenas de variáveis em poucos fatores significativos? A análise fatorial nos oferece uma lente poderosa para entender essas e muitas outras perguntas.\nEste livro foi desenvolvido como um guia introdutório, prático e acessível para estudantes universitários que desejam compreender e aplicar a análise fatorial em suas pesquisas. Nossa jornada será conduzida utilizando a linguagem de programação R_{4.4}, uma das ferramentas mais modernas e robustas em ciência de dados e estatística aplicada.\nO objetivo deste livro não é apenas ensinar uma técnica estatística, mas despertar o olhar analítico e investigativo de quem deseja descobrir as estruturas invisíveis que regem os fenômenos observáveis. Seja em pesquisas acadêmicas, projetos de TCC, estudos de opinião ou diagnósticos institucionais, a análise fatorial é um recurso indispensável.\nPrepare-se para uma jornada empolgante que une teoria, prática e programação de forma intuitiva e eficiente. Bem-vindo ao universo da análise fatorial com R.",
+    "crumbs": [
+      "**Prefàcio**"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  O Que é Análise Fatorial",
+    "section": "",
+    "text": "1.1 Tipos de Análise Fatorial\nTécnicas analíticas fatoriais podem atingir seus objetivos ou de uma perspectiva exploratória ou de uma confirmatória. Existe um debate contínuo sobre o papel apropriado da análise fatorial, onde muitos pesquisadores consideram a AF apenas exploratória, útil na busca da estrutura em um conjunto de variáveis ou como um método de redução de dados. Sob essa perspectiva, as técnicas analíticas fatoriais consideram o que os dados oferecem e não estabelecem restrições a priori sobre o número de componentes a serem extraídos. Para muitas, talvez a maioria das aplicações, esse uso da AF é adequado. No entanto, em outras situações, o pesquisador tem preconcebido idéias sobre a real estrutura dos dados, baseado em suporte teórico ou em pesquisas anteriores. Ele pode desejar testar hipóteses envolvendo questões sobre, por exemplo, quais variáveis deveriam ser agrupadas em fator ou número exato de fatores. Nesses casos, o pesquisador espera que a análise fatorial desempenhe um papel confirmatório, ou seja, avalie o grau em que os dados satisfazem à estrutura esperada.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>**O Que é Análise Fatorial**</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#tipos-de-análise-fatorial",
+    "href": "intro.html#tipos-de-análise-fatorial",
+    "title": "1  O Que é Análise Fatorial",
+    "section": "",
+    "text": "1.1.1 Análise Fatorial Exploratória - AFE\nNa prática da pesquisa científica, é comum que o investigador se depare com conjuntos de dados sobre um fenômeno sem dispor de um modelo teórico bem estabelecido que oriente a análise. Isso pode ocorrer por diversos motivos:\n\nAusência de investimento na formulação teórica do problema;\nLacunas existentes na literatura;\nInadequação de modelos prévios aos dados observados.\n\nAinda assim, mesmo em sua forma exploratória, a Análise Fatorial requer pressupostos mínimos de natureza teórica. O mais fundamental deles é a suposição de que existe uma estrutura fatorial latente por trás das variáveis observadas — ou seja, fatores ortogonais (independentes) ou oblíquos (correlacionados) que explicam as correlações entre as variáveis.\n\n\n\n\n\n\n\n\n1.1.1.1 Essa Suposição Exclui:\n\nRelações causais entre fatores;\nRelações causais entre variáveis observadas;\nCorrelações entre fatores únicos e variáveis externas.\n\nO principal objetivo da Análise Fatorial Exploratória é identificar o menor número possível de fatores latentes que consiga reproduzir a matriz de correlações entre as variáveis observadas com boa precisão.\n\n\n\n\n\n\n\n\n1.1.2 Análise Fatorial Confirmatória - AFC\nA Análise Fatorial Confirmatória (AFC) é uma técnica que busca testar empiricamente um modelo teórico previamente especificado. Diferente da Análise Fatorial Exploratória, que busca descobrir padrões ocultos nos dados, a AFC parte de uma hipótese clara e formalizada sobre a estrutura dos fatores e suas relações com as variáveis observadas.\nVerificar se a estrutura fatorial hipotética proposta pelo pesquisador é compatível com os dados coletados. Em outras palavras, a AFC testa se:\n\nO número de fatores especificado é adequado;\nOs itens associados a cada fator são coerentes;\nO modelo teórico explica bem a covariância entre as variáveis.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>**O Que é Análise Fatorial**</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#benefícios-da-análise-fatorial",
+    "href": "intro.html#benefícios-da-análise-fatorial",
+    "title": "1  O Que é Análise Fatorial",
+    "section": "1.2 Benefícios da Análise Fatorial",
+    "text": "1.2 Benefícios da Análise Fatorial\nA Análise Fatorial oferece diversas vantagens para pesquisadores, professores e estudantes que lidam com dados complexos. Entre os principais benefícios, destacam-se:\n\nRedução de Variáveis: Transforma dezenas de variáveis correlacionadas em poucos fatores que representam a essência do fenômeno estudado.\n\nEm uma pesquisa sobre qualidade de vida, 30 itens do questionário são agrupados em apenas 4 fatores principais: saúde física, saúde mental, ambiente e relações sociais. Isso torna os resultados mais claros e aplicáveis.\n\nClareza Conceitual: Ajuda a revelar dimensões teóricas latentes, mesmo quando elas não são diretamente observáveis.\n\nEm um estudo educacional, respostas a itens sobre “motivação” mostram que existem, na verdade, dois fatores distintos: motivação intrínseca (gosto pelo conteúdo) e motivação extrínseca (recompensas externas).\n\nMelhoria de Questionários: Permite verificar quais itens de um teste ou questionário são redundantes, pouco informativos ou mal formulados.\n\nNa validação de um instrumento de avaliação de clima organizacional, a análise fatorial revelou que dois itens estavam praticamente duplicando a mesma informação. Eles foram removidos para tornar o instrumento mais enxuto e eficiente.\n\nAplicabilidade Ampla: Pode ser utilizada em várias áreas do conhecimento, tanto em contextos acadêmicos quanto profissionais.\n\n\n1.2.1 Exemplo Prático:\n\nPsicologia: identificar fatores de personalidade a partir de itens do 16PF.\nMarketing: agrupar consumidores com base em seus comportamentos de compra (ex: fatores como - preço, marca e experiência).\nSaúde pública: entender dimensões de qualidade de atendimento em hospitais.\nEducação: estruturar competências avaliadas em provas e testes.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>**O Que é Análise Fatorial**</span>"
+    ]
+  },
+  {
+    "objectID": "Cap2_Origens.html",
+    "href": "Cap2_Origens.html",
+    "title": "2  Origens e Evolução Histórica da AF",
+    "section": "",
+    "text": "2.1 Pioneiros da Análise Fatorial\nThurstone (1931) identificou sete habilidades mentais primárias, em vez de um único fator g. Estudos mais recentes têm alterado a quantidade de fatores a serem considerados na análise de inteligência. No início, os métodos apresentavam uma característica mais empírica do que inferencial. Em 1933 Pearson e Hotteling deram um formalismo melhor as idéias criadas por Spearman, e assim impulsionado com essas idéias, em 1940 com Lawley, surge um primeiro trabalho com um maior rigor matemático, o que fez com que se aumentasse à aceitação dessas técnicas no ramo da psicologia (LAWLEY, 1940).\nO germinar da Análise Fatorial está ligado a trabalhos pioneiros de Karl Pearson (1901) e do psicólogo inglês Charles Spearman (1863–1945). Spearman, em 1904, propôs que a inteligência humana poderia ser compreendida por meio de um fator geral, denominado fator “g” (general intelligence). Esse modelo unifatorial afirmava que o desempenho em diferentes testes cognitivos era determinado por esse único fator latente comum. Spearman também introduziu a ideia de que as correlações entre variáveis observáveis poderiam ser explicadas por variáveis latentes não observadas diretamente, fundamentando a psicometria moderna (Spearman, 1904).\nNa década de 1930, o matemático e psicólogo americano Louis L. Thurstone (1887–1955) desafiou a visão unifatorial de Spearman ao defender que a inteligência era multifacetada, composta por vários fatores primários independentes, como raciocínio verbal, habilidade espacial e memória. Thurstone foi pioneiro na análise fatorial de múltiplos fatores e desenvolveu métodos para rotacionar os fatores (rotação ortogonal), tornando os resultados mais interpretáveis e relevantes. Ele fundou a escola dos fatores primários, contribuindo decisivamente para o avanço da AF (Thurstone, 1931).\nJá na metade do século XX, Raymond Cattell (1905–1998) buscou unir os fundamentos teóricos da psicologia com as técnicas da análise fatorial, ampliando o uso prático da metodologia. Ele distinguiu entre inteligência fluida e cristalizada, popularizou a Análise Fatorial Exploratória (AFE) e desenvolveu o famoso teste 16PF (16 fatores de personalidade). Cattell também foi pioneiro na análise de segundo nível, analisando fatores de fatores, o que permitiu compreender estruturas mais complexas.\nNos anos 1970, com o avanço da modelagem estatística, Karl Jöreskog desenvolveu a Análise Fatorial Confirmatória (AFC), que se baseia em modelos de equações estruturais (SEM). Sua abordagem trouxe maior rigor teórico e a possibilidade de testar hipóteses específicas sobre as relações entre variáveis observadas e latentes. Jöreskog é o criador do programa LISREL, e seu trabalho fundamenta hoje a AFC moderna, inclusive nas ferramentas computacionais como o pacote lavaan na linguagem R.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>**Origens e Evolução Histórica da AF**</span>"
+    ]
+  },
+  {
+    "objectID": "Cap3_Conceitos.html",
+    "href": "Cap3_Conceitos.html",
+    "title": "3  Conceitos Fundamentais",
+    "section": "",
+    "text": "3.1 Comunalidades (\\(h^{2}\\))\nA comunalidade representa a porção da variância de uma variável observada que é explicada pelos fatores comuns do modelo.Em outras palavras, ela indica o quanto da informação de uma variável é compartilhada com os fatores latentes. Já a parcela não explicada — atribuída a características únicas ou erro — é denominada variância específica \\(\\psi_{i}\\).\nMatematicamente, a variância total de uma variável \\(X_{i}\\) pode ser expressa como:\n\\[\\underbrace{\\sigma_{ij}^{2}}_{\\mbox{Variância total de } (X_{i})} = \\underbrace{l^{2}_{i1}+l^{2}_{i2}+\\ldots+l^{2}_{im}}_{\\mbox{Comunalidades } (h_{i}^{2})}  +\\underbrace{\\psi_{i}}_{\\mbox{Variancia Específica}}\\]\nA comunalidade \\(h_i^2\\) é a soma dos quadrados dos carregamentos fatoriais (\\(l_{ij}\\)) da variável \\(X_i\\) nos \\(m\\) fatores:\n\\[h_{ij}^{2} =  l^{2}_{i1}+l^{2}_{i2}+\\ldots+l^{2}_{im} = \\sum_{ij}^{m} l^{2}_{ij} \\ \\ \\ \\ \\ com \\ \\ \\ \\ i=1,2,...,p \\] Portanto:\n\\[ \\sigma_{ij}  = h_{i}^{2} + \\psi_{i}\\] Valores de comunalidade próximos de 1 indicam que a variável é bem explicada pelos fatores do modelo. Em aplicações práticas, considera-se geralmente satisfatória uma comunalidade acima de 0,70, embora esse limiar possa variar conforme o contexto da pesquisa.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>**Conceitos Fundamentais**</span>"
+    ]
+  },
+  {
+    "objectID": "Cap3_Conceitos.html#cargas-fatoriais-loading",
+    "href": "Cap3_Conceitos.html#cargas-fatoriais-loading",
+    "title": "3  Conceitos Fundamentais",
+    "section": "3.2 Cargas Fatoriais (Loading)",
+    "text": "3.2 Cargas Fatoriais (Loading)\nAs cargas fatoriais são os coeficientes que indicam a correlação (ou saturação) entre cada variável observada e os fatores latentes extraídos. Esses coeficientes representam quanto uma variável “carrega” de um fator específico.\nDe forma simplificada, uma carga fatorial alta indica que a variável está fortemente associada ao fator correspondente. Por exemplo, se um item de teste de matemática apresenta uma carga de 0,85 no fator “raciocínio lógico”, entende-se que ele representa fortemente essa dimensão latente.\nSegundo Kerlinger (1980), as cargas fatoriais são uma das saídas mais importantes da análise fatorial, pois sintetizam uma estrutura complexa em uma forma mais manejável e interpretável.\nAs cargas podem ser positivas ou negativas, mas raramente excedem o valor absoluto de 1. Elas são dispostas em uma matriz de cargas fatoriais, que resume o relacionamento entre todas as variáveis observadas e os fatores comuns. Essa matriz é essencial para:\nInterpretar o que representa cada fator\nDeterminar quais variáveis compõem cada fator\nAvaliar a adequação do modelo\nA Figura a seguir ilustra de forma esquemática a estrutura básica da análise fatorial, onde múltiplas variáveis \\(X_1, X_2, ..., X_p\\) são explicadas por um conjunto reduzido de fatores latentes \\(F_1, F_2, ..., F_m\\).",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>**Conceitos Fundamentais**</span>"
+    ]
+  }
+]

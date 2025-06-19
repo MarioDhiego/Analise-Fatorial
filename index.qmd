@@ -1,0 +1,27 @@
+```{=html}
+<style>
+body{text-align: justify}
+</style>
+```
+
+:::: progress
+::: {.progress-bar style="width: 100%;"}
+:::
+::::
+
+# **Prefàcio** {.unnumbered}
+
+
+A **Análise Fatorial** é um método estatístico multivariado amplamente utilizado para explorar padrões ocultos e reduzir a complexidade dos dados. O que realmente motiva um aluno? Quais dimensões psicológicas influenciam o comportamento do consumidor? Como podemos resumir dezenas de variáveis em poucos fatores significativos? A análise fatorial nos oferece uma lente poderosa para entender essas e muitas outras perguntas.
+
+Este livro foi desenvolvido como um guia introdutório, prático e acessível para estudantes universitários que desejam compreender e aplicar a análise fatorial em suas pesquisas. Nossa jornada será conduzida utilizando a linguagem de programação **R_{4.4}**, uma das ferramentas mais modernas e robustas em ciência de dados e estatística aplicada.
+
+O objetivo deste livro não é apenas ensinar uma técnica estatística, mas despertar o olhar analítico e investigativo de quem deseja descobrir as estruturas invisíveis que regem os fenômenos observáveis. Seja em pesquisas acadêmicas, projetos de TCC, estudos de opinião ou diagnósticos institucionais, a análise fatorial é um recurso indispensável.
+
+Prepare-se para uma jornada empolgante que une teoria, prática e programação de forma intuitiva e eficiente. Bem-vindo ao universo da análise fatorial com R.
+
+
+:::: progress
+::: {.progress-bar style="width: 100%;"}
+:::
+::::

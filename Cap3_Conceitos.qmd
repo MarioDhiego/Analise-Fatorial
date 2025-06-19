@@ -1,0 +1,74 @@
+
+```{=html}
+<style>
+  body{text-align: justify}
+</style>
+  ```
+
+# **Conceitos Fundamentais**
+
+A Análise Fatorial fundamenta-se na ideia de que a variância de uma variável observável pode ser decomposta em dois componentes principais: (1) a parte explicada pelos fatores comuns (chamada de comunalidade) e (2) a parte específica ou única da variável (chamada de variância específica). Dois conceitos essenciais emergem desse raciocínio: comunalidade e carga fatorial.
+
+
+
+## **Comunalidades ($h^{2}$)**
+  
+A comunalidade representa a porção da variância de uma variável observada que é explicada pelos fatores comuns do modelo.Em outras palavras, ela indica o quanto da informação de uma variável é compartilhada com os fatores latentes. Já a parcela não explicada — atribuída a características únicas ou erro — é denominada variância específica $\psi_{i}$.
+
+
+Matematicamente, a variância total de uma variável $X_{i}$ pode ser expressa como:
+
+
+$$\underbrace{\sigma_{ij}^{2}}_{\mbox{Variância total de } (X_{i})} = \underbrace{l^{2}_{i1}+l^{2}_{i2}+\ldots+l^{2}_{im}}_{\mbox{Comunalidades } (h_{i}^{2})}  +\underbrace{\psi_{i}}_{\mbox{Variancia Específica}}$$ 
+
+
+A comunalidade $h_i^2$ é a soma dos quadrados dos carregamentos fatoriais ($l_{ij}$) da variável $X_i$ nos $m$ fatores:
+  
+  $$h_{ij}^{2} =  l^{2}_{i1}+l^{2}_{i2}+\ldots+l^{2}_{im} = \sum_{ij}^{m} l^{2}_{ij} \ \ \ \ \ com \ \ \ \ i=1,2,...,p $$
+Portanto:
+  
+  $$ \sigma_{ij}  = h_{i}^{2} + \psi_{i}$$
+Valores de comunalidade próximos de 1 indicam que a variável é bem explicada pelos fatores do modelo. Em aplicações práticas, considera-se geralmente satisfatória uma comunalidade acima de 0,70, embora esse limiar possa variar conforme o contexto da pesquisa.
+
+
+
+## **Cargas Fatoriais (Loading)**
+  
+As cargas fatoriais são os coeficientes que indicam a correlação (ou saturação) entre cada variável observada e os fatores latentes extraídos. Esses coeficientes representam quanto uma variável “carrega” de um fator específico.
+
+De forma simplificada, uma carga fatorial alta indica que a variável está fortemente associada ao fator correspondente. Por exemplo, se um item de teste de matemática apresenta uma carga de 0,85 no fator “raciocínio lógico”, entende-se que ele representa fortemente essa dimensão latente.
+
+Segundo Kerlinger (1980), as cargas fatoriais são uma das saídas mais importantes da análise fatorial, pois sintetizam uma estrutura complexa em uma forma mais manejável e interpretável.
+
+As cargas podem ser positivas ou negativas, mas raramente excedem o valor absoluto de 1. Elas são dispostas em uma matriz de cargas fatoriais, que resume o relacionamento entre todas as variáveis observadas e os fatores comuns. Essa matriz é essencial para:
+
+Interpretar o que representa cada fator
+
+Determinar quais variáveis compõem cada fator
+
+Avaliar a adequação do modelo
+
+A Figura a seguir ilustra de forma esquemática a estrutura básica da análise fatorial, onde múltiplas variáveis $X_1, X_2, ..., X_p$ são explicadas por um conjunto reduzido de fatores latentes $F_1, F_2, ..., F_m$.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
